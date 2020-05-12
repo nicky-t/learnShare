@@ -11,8 +11,16 @@
 
   <body>
     <%= render partial: 'common/header' %>
+    
+    <main>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+      <%= yield %>
+    </main>
+    
+    <footer>
+      <h1>learnShare</h1>
+      <p>友達と学んだ内容をシェアしよう！</p>
+    </footer>
   </body>
 </html>
