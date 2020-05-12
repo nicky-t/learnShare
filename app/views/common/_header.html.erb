@@ -3,12 +3,14 @@
     <h1><a href="/">leanShare</a></h1>
     <p>学んだ内容をシェアしよう！</p>
   </div>
-  <nav class="navs">
-    <ul>
-      <li class="btn"><a href="">leranShareってなに？</a></li>
-      <li class="btn"><a href="/">ホーム</a></li>
-      <li class="btn"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-      <li class="btn"><%= link_to 'プロフィール', user_path(current_user.id)  %></li>
-    </ul>
-  </nav>
+  <% if user_signed_in? %>
+    <nav class="navs">
+      <ul>
+        <li class="btn"><a href="">leranShareってなに？</a></li>
+        <li class="btn"><a href="/">ホーム</a></li>
+        <li class="btn"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+        <li class="btn"><%= link_to "プロフィール", user_path(current_user) %></li>
+      </ul>
+    </nav>
+  <% end %>
 </header>
