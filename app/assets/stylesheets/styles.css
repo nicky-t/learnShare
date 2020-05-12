@@ -33,7 +33,7 @@ header p {
 
 .navs {
     height: 50px;
-    background-color: #F2F2F2;
+    background-color: rgb(246,246,244);
 }
 
 ul {
@@ -47,7 +47,7 @@ ul {
 }
 
 .btn {
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 .btn a {
@@ -63,6 +63,7 @@ ul {
 
 main {
   min-height: calc(100vh - 120px);
+  background-color: rgb(246,246,244);
 }
 
 footer {
@@ -91,6 +92,7 @@ footer p {
   color: rgb(255,110,120);
   text-align: center;
   font-weight: bold;
+  margin: 0;
 }
 
 .log-in {
@@ -138,6 +140,41 @@ footer p {
   text-decoration: none;
 }
 
+/*プロフィール編集画面*/
+.edit {
+  background-color: white;
+  width: 95%;
+  height: 100vh;
+  margin:0 auto;
+  text-align: center;
+  color: #555;
+}
+
+.edit h2 {
+  margin: 20px 0;
+  font-weight: normal;
+}
+
+.form {
+  width: 80%;
+  text-align: left;
+  margin: 0 auto 30px;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  border-bottom: 3px solid rgb(142,122,96);
+}
+
+.text input {
+  height: 60px;
+}
 
 @media (min-width: 600px) {
   header {
@@ -210,6 +247,5 @@ footer p {
   .btn:hover {
     background-color: rgba(143,122,96,0.1);
   }
-  
 }
   
