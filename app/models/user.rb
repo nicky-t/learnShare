@@ -6,4 +6,8 @@ class User < ApplicationRecord
   
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :confirmable
+         
+  def full_profiel?
+    image.attached? && nickname? && introduce?
+  end
 end

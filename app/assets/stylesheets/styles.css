@@ -248,6 +248,47 @@ footer p {
   font-size: 14px;
 }
 
+/*プロフィール追加推奨画面*/
+.full_profiel {
+  width: 80%;
+  height: 250px;
+  margin: 0 auto;
+  background-color: white;
+  color: #555;
+  text-align: center;
+  box-shadow: 0 0 4px gray;
+}
+
+.full_profiel > h2 {
+  margin: 0 auto;
+  padding-top: 31px;
+  font-size: 16px;
+  color: #F27A5E;
+}
+
+.full_profiel > p {
+  color: #555;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.full_profiel > a {
+  text-decoration: none;
+  padding: 7px 10px;
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: #F27A5E;
+  border: 0;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0 0 4px black;
+}
+
+.full_profiel > a:hover {
+  opacity: 0.8;
+}
+
 
 @media (min-width: 600px) {
   header {
@@ -296,6 +337,21 @@ footer p {
   /*プロフィール編集画面*/
   .edit {
     width: 500px;
+  }
+  
+  /*プロフィール追加推奨画面*/
+  .full_profiel {
+    width: 520px;
+  }
+  
+  .full_profiel > h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .full_profiel > p {
+    text-align: center;
+    font-size: 15px;
   }
 }
 

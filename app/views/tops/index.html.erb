@@ -1,0 +1,9 @@
+<% unless current_user.full_profiel? %>
+  <div class="full_profiel">
+    <h2>まずは、あなたの基本プロフィールを登録しましょう！</h2>
+    <p>Profyは友達の質問に答えながらプロフィールを作るサービスです！</p>
+    <%= link_to "プロフィールを登録する", edit_user_path(current_user) %>
+  </div>
+<% else %>
+
+<% end %>
