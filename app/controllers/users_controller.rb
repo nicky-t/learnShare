@@ -7,9 +7,11 @@ class UsersController < ApplicationController
   end
   
   def update
+    current_user.update(update_params)
   end
   
   private
-  def user_params
+  def update_params
+    params.require(:user).permit(:nickname, :introduce)
   end
 end

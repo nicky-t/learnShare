@@ -1,5 +1,7 @@
 <div class="profiel">
-  <%= link_to 'プロフィール編集', edit_user_path(current_user) %>
+  <% if current_user.id == @user.id %>
+    <%= link_to 'プロフィール編集', edit_user_path(current_user) %>
+  <% end %>
   <%= @user.nickname %>
-  <%= @user.introduce %>
+  <%= simple_format(@user.introduce) %>
 </div>
