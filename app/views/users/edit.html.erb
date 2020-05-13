@@ -1,11 +1,11 @@
 <div class="edit">
   <%= form_for current_user do |f| %>
-    <h2>プロフィール情報</h2>
     <div class="form-group">
       <h2>プロフィール画像</h2>
       <div class="form-group file">
         <%= f.file_field :image, class: "form-control floating-label", placeholder: "画像アップロード" %>
       </div>
+      <h2>プロフィール情報</h2>
       <div class="form">
         <%= f.label :ニックネーム %><br />
         <%= f.text_field :nickname, placeholder: "ニックネーム", class: "form-control" %>
@@ -14,9 +14,9 @@
         <%= f.label :自己紹介 %><br />
         <%= f.text_area :introduce, placeholder: "自己紹介", class: "form-control" %>
       </div>
-    </div>
-    <div class="actions">
-      <%= f.submit "保存", class: "btn" %>
+      <div class="actions">
+        <%= f.submit "保存", class: "btn" %>
+      </div>
     </div>
   <% end %>
 </div>
