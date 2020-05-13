@@ -1,8 +1,10 @@
 <div class="profiel">
-  <% if current_user.id == @user.id %>
-    <%= link_to 'プロフィール編集', edit_user_path(current_user) %>
-  <% end %>
-  <div class="image" style="background-image: url(<%= rails_blob_path(@user.image) %>) "></div>
-  <%= @user.nickname %>
-  <%= simple_format(@user.introduce) %>
+  <div class="image-box">
+    <div class="image" style="background-image: url(<%= rails_blob_path(@user.image) %>) "></div>
+    <% if current_user.id == @user.id %>
+      <%= link_to 'プロフィール編集', edit_user_path(current_user), class: "edit-profiel"  %>
+    <% end %>
+  </div>
+  <div class="nickname"><%= @user.nickname %></div>
+  <div class="introduce"><%= simple_format(@user.introduce) %></div>
 </div>

@@ -189,6 +189,62 @@ footer p {
   height: 70px;
 }
 
+/*プロフィール画面*/
+.profiel {
+  background-color: white;
+  width: 70%;
+  height: 400px;
+  padding: 20px;
+  margin:0px auto;
+  color: #555;
+  border-radius: 2px;
+}
+
+.image-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profiel .image {
+  width: 90px;
+  height: 90px;
+  border: 4px solid #fff;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+.edit-profiel {
+  text-decoration: none;
+  height: 30px;
+  border: 2px solid #F2AB91;
+  color: #F2AB91;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+.edit-profiel:hover {
+  background-color: rgba(210, 210, 210, 0.3);
+}
+
+.nickname {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.introduce {
+  font-size: 14px;
+  
+}
+
 @media (min-width: 600px) {
   header {
     height: 200px
@@ -226,6 +282,11 @@ footer p {
   
   .btn a {
     font-size: 20px;
+  }
+
+/*プロフィール画面*/
+  .profiel {
+    width: 500px;
   }
 }
 
