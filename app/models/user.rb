@@ -10,4 +10,8 @@ class User < ApplicationRecord
   def full_profiel?
     image.attached? && nickname? && introduce?
   end
+  
+  def group_in?
+    group_id?
+  end
 end

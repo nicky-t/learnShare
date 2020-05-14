@@ -1,9 +1,15 @@
 <% unless current_user.full_profiel? %>
   <div class="full_profiel">
     <h2>まずは、あなたの基本プロフィールを登録しましょう！</h2>
-    <p>Profyは友達の質問に答えながらプロフィールを作るサービスです！</p>
+    <p>learnShareは友達と学習したことを共有するサービスです！</p>
     <%= link_to "プロフィールを登録する", edit_user_path(current_user) %>
   </div>
 <% else %>
-
+  <% unless current_user.group_in? %>
+    <div class="full_profiel">
+      <h2>グループに参加しよう！</h2>
+      <p>友達と同じグループに入って学んだことをシェアしよう！</p>
+      <%= link_to "グループを探す", edit_user_path(current_user) %>
+    </div>
+  <% end %>
 <% end %>
